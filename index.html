@@ -386,20 +386,21 @@
                 <div class="mb-6">
                     <label class="block text-sm font-medium text-gray-700 mb-1">Pilih Ikon (FontAwesome)</label>
                     <select id="srvIcon" class="w-full px-4 py-2 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary outline-none font-sans">
-                        <option value="fa-stethoscope">KEBIDANAN</option>
-                        <option value="fa-tooth">Gigi</option>
-                        <option value="fa-baby">Anak/Bayi</option>
-                        <option value="fa-eye">Mata</option>
-                        <option value="fa-lungs">Paru-paru</option>
-                        <option value="fa-heart-pulse">Jantung</option>
-                        <option value="fa-brain">Saraf/Otak</option>
-                        <option value="fa-bone">Tulang</option>
-                        <option value="fa-vial">Laboratorium</option>
+                        <option value="fa-stethoscope">POLI UMUM</option>
+                        <option value="fa-stethoscope">POLI KEBIDANAN</option>
+                        <option value="fa-tooth">POLI GIGI</option>
+                        <option value="fa-baby">POLI ANAK</option>
+                        <option value="fa-eye">POLI MATA</option>
+                        <option value="fa-lungs">POLI PARU</option>
+                        <option value="fa-heart-pulse">POLI BEDAH</option>
+                        <option value="fa-brain">POLI SARAF</option>
+                        <option value="fa-bone">POLI ORTHOPEDI</option>
+                        <option value="fa-vial">POLI PENYAKIT DALAM</option>
                         <option value="fa-truck-medical">Ambulans</option>
-                        <option value="fa-pills">Apotek</option>
+                        <option value="fa-pills">POLI RADIOLOGI</option>
                         <option value="fa-bed-pulse">Rawat Inap</option>
-                        <option value="fa-ear-listen">THT</option>
-                        <option value="fa-notes-medical">MCU</option>
+                        <option value="fa-ear-listen">POLI THT</option>
+                        <option value="fa-notes-medical">POLI MCU</option>
                     </select>
                 </div>
 
@@ -745,7 +746,7 @@
         window.handleLogin = (e) => {
             e.preventDefault();
             const pin = document.getElementById('adminPin').value;
-            if(pin === 'Rsutrijaya') {
+            if(pin === 'jaya2026') {
                 window.closeLoginModal();
                 toggleAdminUI(true);
                 window.showToast("Berhasil masuk sebagai Admin");
